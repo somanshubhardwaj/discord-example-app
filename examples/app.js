@@ -7,8 +7,8 @@ import {
   MessageComponentTypes,
   ButtonStyleTypes,
 } from 'discord-interactions';
-import { VerifyDiscordRequest, getRandomEmoji, DiscordRequest } from './utils.js';
-import { getShuffledOptions, getResult } from './game.js';
+import { VerifyDiscordRequest, getRandomEmoji, DiscordRequest } from '../utils.js';
+import { getShuffledOptions, getResult } from '../game.js';
 
 // Create an express app
 const app = express();
@@ -87,6 +87,7 @@ app.post('/interactions', async function (req, res) {
       });
     }
   }
+
 
   /**
    * Handle requests from interactive components
